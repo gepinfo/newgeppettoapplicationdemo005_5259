@@ -1,0 +1,36 @@
+<h2 class="screen-align">Createproject</h2>
+<div id="template-imo6" class="row">
+    <div id="template-inei" class="cell">
+        <label id="template-ii9p" class="label">Project Name</label>
+        <input id="template-i7qi" placeholder="Enter Project Name"
+        [(ngModel)]="projecten.projectname" [ngModelOptions]="{standalone: true}"
+        class="input form-control" />
+    </div>
+    <div id="template-iusg" class="cell">
+        <label id="template-ish7" class="label">Technology</label>
+        <input id="template-idpvc" placeholder="Enter Technology"
+        [(ngModel)]="projecten.technology" [ngModelOptions]="{standalone: true}"
+        class="input form-control" />
+    </div>
+</div>
+<div id="template-i3o1" class="row">
+    <div id="template-iwhz" class="cell">
+        <label id="template-ixa63" class="label">Manager</label>
+        <div id="template-it9z6" class="">
+            <ng-select id="template-ii5nq" name="dynamicdropdown_template-ii5nq" [searchable]="true"
+            [virtualScroll]="true" [items]="managerenitemArray" bindLabel="managername"
+            bindValue="managername" [(ngModel)]="projecten.manager" [ngModelOptions]="{standalone: true}"
+            (click)="managerenGpGetAllValues()" class="form-control"></ng-select>
+        </div>
+    </div>
+    <div id="template-i1z7" class="cell">
+        <label id="template-i37gx" class="label">Lead</label>
+        <div id="template-i8l2d" class="">
+            <ng-select id="template-ijbby" name="dynamicdropdown_template-ijbby" [searchable]="true"
+            [virtualScroll]="true" [items]="leadenitemArray" bindLabel="leadername"
+            bindValue="leadername" [(ngModel)]="projecten.lead" [ngModelOptions]="{standalone: true}"
+            (click)="leadenGpGetAllValues()" class="form-control"></ng-select>
+        </div>
+    </div>
+</div>
+<button id="template-iqcrv" (click)="GpCreate()" class="button btn btn-primary">Create</button>

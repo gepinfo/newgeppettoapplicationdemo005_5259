@@ -1,0 +1,29 @@
+<h2 class="screen-align">Createuser</h2>
+<div id="template-i32y" class="row">
+    <div id="template-ik4b" class="cell">
+        <label id="template-iyrj" class="label">First Name</label>
+        <input id="template-is0g" placeholder="Enter First Name"
+        [(ngModel)]="usersen.firstname" [ngModelOptions]="{standalone: true}" class="input form-control"
+        />
+    </div>
+    <div id="template-it26" class="cell">
+        <label id="template-is7q" class="label">Last Name</label>
+        <input id="template-i7pyl" placeholder="Enter Last Name"
+        [(ngModel)]="usersen.lastname" [ngModelOptions]="{standalone: true}" class="input form-control"
+        />
+    </div>
+</div>
+<div id="template-izev" class="row">
+    <div id="template-iga5" class="cell">
+        <label id="template-il5vo" class="label">Email</label>
+        <input id="template-iv28h" placeholder="Enter Email" [(ngModel)]="usersen.email"
+        [ngModelOptions]="{standalone: true}" class="input form-control" />
+    </div>
+    <div id="template-inli" class="cell">
+        <label id="template-iwx3w" class="label">Password</label>
+        <input id="template-ia3q7" placeholder="Enter Password"
+        [(ngModel)]="usersen.userpassword" [ngModelOptions]="{standalone: true}"
+        class="input form-control" />
+    </div>
+</div>
+<button id="template-i8p2i" (click)="GpCreate()" class="button btn btn-primary">Create</button>
